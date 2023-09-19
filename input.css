@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 43, 95%, 57%;
+    --primary-green: 157, 22%, 30%;
+    --foreground-white: 160, 10%, 94%;
+    --foreground-white-foreground: 0, 0%, 42%;
+
+    @apply bg-primary-green;
+  }
+}
+
+@layer components {
+  button {
+    @apply px-8 py-3 rounded-full cursor-pointer;
+  }
+  button:focus {
+    @apply outline outline-2 outline-inherit outline-offset-2 transition-[outline] duration-100;
+  }
+  input {
+    @apply border border-black/30 outline-black/40 rounded-lg px-4 py-2 text-sm placeholder-black;
+  }
+  input:focus {
+    @apply outline outline-2 outline-offset-2 outline-inherit transition-[outline] duration-100;
+  }
+  a:focus {
+    @apply outline outline-2 rounded-md outline-inherit outline-offset-2 transition-[outline] duration-100;
+  }
+}
+body[data-mobile-menu="opened"] {
+  @apply overflow-y-hidden;
+}
+
+body[data-mobile-menu="opened"] #opened {
+  @apply block;
+}
+
+body[data-mobile-menu="closed"] #closed {
+  @apply block;
+}
+
+body[data-mobile-menu="opened"] #closed {
+  @apply hidden;
+}
+
+body[data-mobile-menu="closed"] #opened {
+  @apply hidden;
+}
+
+body[data-mobile-menu="opened"] header {
+  @apply h-full;
+}
+
+body[data-mobile-menu="opened"] #brand {
+  @apply justify-center;
+}
+
+body[data-mobile-menu="opened"] .lucide-shopping-cart {
+  @apply hidden;
+}
+
+body[data-mobile-menu="opened"] .lucide-user {
+  @apply hidden;
+}
+
+body[data-mobile-menu="opened"] #mobile-wrapper {
+  @apply flex;
+}
+
+body[data-mobile-menu="closed"] #mobile-wrapper {
+  @apply hidden;
+}

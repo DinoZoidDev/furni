@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en" class="font-inter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <title>Furni</title>
+  </head>
+  <body data-mobile-menu="closed">
+    <header
+      class="fixed w-full px-8 py-4 text-white z-[9999] backdrop-blur-md bg-primary-green bg-opacity-80"
+    >
+      <div class="flex items-center max-w-6xl m-auto">
+        <span id="brand" class="text-3xl flex flex-1"
+          >Furni<span class="text-white text-opacity-30">.</span></span
+        >
+        <div class="flex gap-8">
+          <ul class="text-sm gap-8 text-opacity-50 text-white hidden md:flex">
+            <li
+              data-path="home"
+              class="relative after:absolute after:content-[''] after:top-0 after:left-0 after:h-[3px] after:w-full after:bg-primary after:rounded-lg after:mt-5"
+            >
+              Home
+            </li>
+            <li data-path="about-us"><a href="">About Us</a></li>
+            <li data-path="services"><a href="">Services</a></li>
+            <li data-path="blog"><a href="">Blog</a></li>
+            <li data-path="contact-us"><a href="">Contact Us</a></li>
+          </ul>
+          <div class="flex gap-4 items-center">
+            <button class="p-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user"
+              >
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </button>
+            <button class="p-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shopping-cart"
+              >
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+            </button>
+            <button class="md:hidden p-0" id="menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="closed"
+              >
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="opened"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-wrapper"
+        class="mt-10 flex-col gap-20 text-center h-full mr-5"
+      >
+        <ul
+          class="text-sm gap-8 mx-auto text-opacity-50 text-white flex justify-center flex-col"
+        >
+          <li
+            data-path="home"
+            class="relative after:absolute after:content-[''] after:top-0 after:left-0 after:h-[3px] after:w-full after:bg-primary after:rounded-lg after:mt-5"
+          >
+            <a href="">Home</a>
+          </li>
+          <li data-path="about-us"><a href="">About Us</a></li>
+          <li data-path="services"><a href="">Services</a></li>
+          <li data-path="blog"><a href="">Blog</a></li>
+          <li data-path="contact-us"><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="h-screen bg-primary-green text-white pt-32 md:pt-52 px-8">
+        <div
+          class="flex flex-col md:flex-row px-4 justify-between gap-x-3 gap-y-12 max-w-6xl m-auto"
+        >
+          <div class="flex flex-col gap-16 items-center md:items-start">
+            <h1
+              class="lg:text-6xl text-5xl font-semibold md:text-left text-center"
+            >
+              Modern Interior<br />
+              Design Studio
+            </h1>
+            <div
+              class="flex justify-center md:justify-start flex-col-reverse md:flex-row gap-3 max-w-sm"
+            >
+              <button class="bg-primary !outline-primary text-black">
+                Shop now
+              </button>
+              <button
+                class="text-white border-white border border-opacity-30 !outline-white/50"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-1 relative">
+            <svg
+              viewBox="0 0 260 176"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute right-1 top-[4rem] w-[260px] h-[176px] hidden lg:block"
+            >
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="4"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="4"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="4" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="4" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="4" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="4" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="4" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="4" r="4" fill="#D9D9D9" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="28"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="28"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="28" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="28" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="28" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="28" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="28" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="28" r="4" fill="#D9D9D9" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="52"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="52"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="52" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="52" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="52" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="52" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="52" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="52" r="4" fill="#D9D9D9" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="76"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="76"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="76" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="76" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="76" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="76" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="76" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="76" r="4" fill="#D9D9D9" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="100"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="100"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="100" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="100" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="100" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="100" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="100" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="100" r="4" fill="#D9D9D9" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="124"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="124"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="124" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="124" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="124" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="124" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="124" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="124" r="4" fill="#D9D9D9" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="148"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="148"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="148" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="148" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="148" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="148" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="148" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="148" r="4" fill="#D9D9D9" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="172"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="172"
+                rx="4.5"
+                ry="4"
+                fill="#D9D9D9"
+              />
+              <circle opacity="0.3" cx="76" cy="172" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="112" cy="172" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="148" cy="172" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="184" cy="172" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="220" cy="172" r="4" fill="#D9D9D9" />
+              <circle opacity="0.3" cx="256" cy="172" r="4" fill="#D9D9D9" />
+            </svg>
+            <img
+              src="couch1.png"
+              alt="Couch hero"
+              class="z-10 object-contain object-center"
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-foreground-white text-[#2F2F2F] px-8 py-[12rem] flex flex-col gap-[12rem]"
+      >
+        <div
+          class="flex gap-12 max-w-6xl mx-auto items-center flex-col md:flex-row"
+        >
+          <div class="flex flex-col items-start gap-12 w-full max-w-[48rem]">
+            <div class="flex flex-col gap-8">
+              <h2 class="text-4xl font-semibold">
+                Crafted with excellent material.
+              </h2>
+              <p class="text-foreground-white-foreground">
+                Donec mattis porta eros, aliquet finibus risus interdum at.
+                Nulla vive the as it was for us to know what was to be done.
+              </p>
+            </div>
+            <button class="bg-[#2F2F2F] !outline-[#2F2F2F] text-white">
+              Explore
+            </button>
+          </div>
+          <div class="flex gap-12 sm:gap-2 flex-col sm:flex-row">
+            <div
+              class="relative group flex flex-col gap-8 sm:max-w-none max-w-[18.5rem]"
+            >
+              <div
+                class="transition-opacity duration-150 ease-in-out group-hover:opacity-100 group-hover:flex-col opacity-0 bg-[hsla(175,37%,33%,0.1)] rounded-3xl inset-0 top-[6rem] -bottom-5 absolute"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="inset-0 mx-auto mt-auto -mb-3 p-1 bg-[#2F2F2F] absolute rounded-full text-white"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
+                </svg>
+              </div>
+              <img
+                src="product1.png"
+                alt="Nordic Chair"
+                class="w-full mx-auto z-10 object-cover object-center"
+              />
+              <div class="text-center z-10">
+                <p class="font-semibold">Nordic Chair</p>
+                <p class="font-bold">$50.00</p>
+              </div>
+            </div>
+            <div
+              class="relative flex flex-col gap-8 sm:max-w-none max-w-[18.5rem] group"
+            >
+              <div
+                class="transition-opacity duration-150 ease-in-out group-hover:opacity-100 group-hover:flex-col opacity-0 bg-[hsla(175,37%,33%,0.1)] rounded-3xl inset-0 top-[6rem] -bottom-5 absolute"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="inset-0 mx-auto mt-auto -mb-3 p-1 bg-[#2F2F2F] absolute rounded-full text-white"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
+                </svg>
+              </div>
+              <img
+                src="product2.png"
+                alt="Kruzo Aero Chair"
+                class="w-full mx-auto z-10 object-cover object-center"
+              />
+              <div class="text-center z-10">
+                <p class="font-semibold">Kruzo Aero Chair</p>
+                <p class="font-bold">$78.00</p>
+              </div>
+            </div>
+            <div
+              class="relative flex sm:max-w-none max-w-[18.5rem] flex-col gap-8 group"
+            >
+              <div
+                class="transition-opacity duration-150 ease-in-out group-hover:opacity-100 group-hover:flex-col opacity-0 bg-[hsla(175,37%,33%,0.1)] rounded-3xl inset-0 top-[6rem] -bottom-5 absolute"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="inset-0 mx-auto mt-auto -mb-3 p-1 bg-[#2F2F2F] absolute rounded-full text-white"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5v14" />
+                </svg>
+              </div>
+              <img
+                src="product3.png"
+                alt="Ergonomic Chair"
+                class="w-full mx-auto z-10 object-cover object-center"
+              />
+              <div class="text-center z-10">
+                <p class="font-semibold">Ergonomic Chair</p>
+                <p class="font-bold">$43.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row gap-x-16 gap-y-24"
+        >
+          <div class="flex flex-col gap-12">
+            <div class="flex gap-6 flex-col">
+              <h2 class="text-4xl font-semibold">Why Choose Us</h2>
+              <p class="text-foreground-white-foreground">
+                Donec mattis porta eros, aliquet finibus risus interdum at.
+                Nulla vive the as it was for us to know what was to be done.
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-12">
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="bg-[hsla(175,37%,33%,0.2)] p-2 rounded-[40%]"
+                  >
+                    <path
+                      d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"
+                    />
+                    <path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2" />
+                    <circle cx="7" cy="18" r="2" />
+                    <path d="M15 18H9" />
+                    <circle cx="17" cy="18" r="2" />
+                  </svg>
+                  <span class="font-semibold">Fast & Free Shipping</span>
+                </div>
+                <p class="text-foreground-white-foreground">
+                  Donec mattis porta eros, aliquet finibus risus interdum at.
+                  Nulla vive the as it was
+                </p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="bg-[hsla(175,37%,33%,0.2)] p-2 rounded-[40%]"
+                  >
+                    <path
+                      d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"
+                    />
+                    <path d="M3 6h18" />
+                    <path d="M16 10a4 4 0 0 1-8 0" />
+                  </svg>
+                  <span class="font-semibold">Easy to Shop</span>
+                </div>
+                <p class="text-foreground-white-foreground">
+                  Donec mattis porta eros, aliquet finibus risus interdum at.
+                  Nulla vive the as it was
+                </p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="bg-[hsla(175,37%,33%,0.2)] p-2 rounded-[40%]"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m4.93 4.93 4.24 4.24" />
+                    <path d="m14.83 9.17 4.24-4.24" />
+                    <path d="m14.83 14.83 4.24 4.24" />
+                    <path d="m9.17 14.83-4.24 4.24" />
+                    <circle cx="12" cy="12" r="4" />
+                  </svg>
+                  <span class="font-semibold">24/7 Support</span>
+                </div>
+                <p class="text-foreground-white-foreground">
+                  Donec mattis porta eros, aliquet finibus risus interdum at.
+                  Nulla vive the as it was
+                </p>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="bg-[hsla(175,37%,33%,0.2)] p-2 rounded-[40%]"
+                  >
+                    <path d="m17 2 4 4-4 4" />
+                    <path d="M3 11v-1a4 4 0 0 1 4-4h14" />
+                    <path d="m7 22-4-4 4-4" />
+                    <path d="M21 13v1a4 4 0 0 1-4 4H3" />
+                  </svg>
+                  <span class="font-semibold">Hassle Free Returns</span>
+                </div>
+                <p class="text-foreground-white-foreground">
+                  Donec mattis porta eros, aliquet finibus risus interdum at.
+                  Nulla vive the as it was
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex">
+            <svg
+              width="262"
+              height="176"
+              viewBox="0 0 262 176"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute -top-[3.4rem] -left-[4rem] md:-left-[4.8rem] text-[#F9BF29]"
+            >
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="4"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="4"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="112" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="148" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="184" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="220" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="256" cy="4" r="4" fill="currentColor" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="28"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="28"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="28" r="4" fill="currentColor" />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="52"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="52"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="52" r="4" fill="currentColor" />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="76"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="76"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="76" r="4" fill="currentColor" />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="100"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="100"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="124"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="124"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="148"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="41.5"
+                cy="148"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="114"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="150"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="186"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="222"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="258"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="172"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="41.5"
+                cy="172"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="114"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="150"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="186"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="222"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="258"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+            </svg>
+            <img
+              src="why-choose-us.png"
+              alt="Why choose us image"
+              class="z-10 rounded-xl object-cover object-right"
+            />
+          </div>
+        </div>
+        <div
+          class="max-w-6xl mx-auto flex flex-col md:flex-row gap-x-8 gap-y-24"
+        >
+          <div class="flex relative justify-center sm:gap-8">
+            <svg
+              width="262"
+              height="176"
+              viewBox="0 0 262 176"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute -top-[3.4rem] -left-[7rem] sm:block hidden"
+            >
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="4"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="4"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="112" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="148" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="184" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="220" cy="4" r="4" fill="currentColor" />
+              <circle opacity="0.3" cx="256" cy="4" r="4" fill="currentColor" />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="28"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="28"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="28" r="4" fill="currentColor" />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="28"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="52"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="52"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="52" r="4" fill="currentColor" />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="52"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="76"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="76"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle opacity="0.3" cx="76" cy="76" r="4" fill="currentColor" />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="76"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="100"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="100"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="100"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="124"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="40.5"
+                cy="124"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="112"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="148"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="184"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="220"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="256"
+                cy="124"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="148"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="41.5"
+                cy="148"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="114"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="150"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="186"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="222"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="258"
+                cy="148"
+                r="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="4.5"
+                cy="172"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <ellipse
+                opacity="0.3"
+                cx="41.5"
+                cy="172"
+                rx="4.5"
+                ry="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="76"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="114"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="150"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="186"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="222"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+              <circle
+                opacity="0.3"
+                cx="258"
+                cy="172"
+                r="4"
+                fill="currentColor"
+              />
+            </svg>
+            <img
+              src="help-you1.png"
+              alt="Couch image"
+              class="w-full sm:max-w-[26rem] z-10 rounded-xl object-cover object-center"
+            />
+            <div class="flex flex-col gap-8">
+              <img
+                src="help-you2.png"
+                alt="Couch image"
+                class="w-[13rem] z-10 rounded-xl self-start lg:block hidden object-cover object-center"
+              />
+
+              <img
+                src="help-you3.png"
+                alt="Couch image"
+                class="absolute w-[19rem] -bottom-20 right-0 z-10 rounded-xl self-start sm:block hidden object-cover object-center"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-x-8 gap-y-12 max-w-[32rem]">
+            <div class="flex gap-y-9 gap-x-6 flex-col">
+              <h2 class="text-4xl font-semibold">
+                We Help You Make Modern Interior Design
+              </h2>
+              <p class="text-foreground-white-foreground">
+                Donec mattis porta eros, aliquet finibus risus interdum at.
+                Nulla vivethe as it was for us to know what was to be done. the
+                this is a long post for the text. This small text has to be
+                place here, since this is a place holder. You can also chane it.
+              </p>
+            </div>
+            <ul
+              class="grid min-[440px]:grid-cols-2 gap-6 pl-4 [&>li]:before:absolute [&>li]:before:-left-3 [&>li]:before:top-2.5 [&>li]:before:w-1 [&>li]:before:h-1 [&>li]:before:outline [&>li]:before:outline-[2px] [&>li]:before:!outline-primary-green [&>li]:before:rounded-full [&>li]:relative"
+            >
+              <li>Donec mattis porta eros, let aliquet finibus ri</li>
+              <li>Donec mattis porta eros, let aliquet finibus ri</li>
+              <li>Donec mattis porta eros, let aliquet finibus ri</li>
+              <li>Donec mattis porta eros, let aliquet finibus ri</li>
+            </ul>
+            <button
+              class="bg-[#2F2F2F] !outline-[#2F2F2F] text-white self-start"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+        <div
+          class="max-w-6xl mx-auto items-center flex flex-col md:flex-row gap-20 mt-20"
+        >
+          <div class="flex flex-col gap-8">
+            <div class="relative">
+              <div
+                class="bg-[hsla(175,37%,33%,0.3)] aspect-square rounded-lg absolute inset-0 m-auto"
+              ></div>
+              <img
+                src="product1.png"
+                alt="Nordic Chair"
+                class="scale-110 object-cover object-center"
+              />
+            </div>
+            <div
+              class="text-sm text-foreground-white-foreground flex flex-col gap-2"
+            >
+              <div>
+                <p class="font-bold text-black text-lg sm:text-base">
+                  Nordic Chair
+                </p>
+                <p class="min-w-[10rem]">
+                  Donec mattis porta eros, aliquet finibus risus in. Donecd.
+                </p>
+              </div>
+              <div><a href="" class="font-bold">Read more</a></div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="relative">
+              <div
+                class="bg-[hsla(175,37%,33%,0.3)] rounded-lg absolute aspect-square inset-0 m-auto"
+              ></div>
+              <img
+                src="product2.png"
+                alt="Kruzo Aero Chair"
+                class="scale-110 object-cover object-center"
+              />
+            </div>
+            <div
+              class="text-sm text-foreground-white-foreground flex flex-col gap-2"
+            >
+              <div>
+                <p class="font-bold text-black text-lg sm:text-base">
+                  Kruzo Aero
+                </p>
+                <p class="min-w-[10rem]">
+                  Donec mattis porta eros, aliquet finibus risus in. Donecd.
+                </p>
+              </div>
+              <div><a href="" class="font-bold">Read more</a></div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="relative">
+              <div
+                class="bg-[hsla(175,37%,33%,0.3)] aspect-square rounded-lg absolute inset-0 m-auto"
+              ></div>
+              <img
+                src="product3.png"
+                alt="Ergonomic Chair"
+                class="scale-110 object-cover object-center"
+              />
+            </div>
+            <div
+              class="text-sm text-foreground-white-foreground flex flex-col gap-2"
+            >
+              <div>
+                <p class="font-bold text-black text-lg sm:text-base">
+                  Ergonomic
+                </p>
+                <p class="min-w-[10rem]">
+                  Donec mattis porta eros, aliquet finibus risus in. Donecd.
+                </p>
+              </div>
+              <div><a href="" class="font-bold">Read more</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto w-full flex flex-col gap-12">
+          <h2 class="text-4xl font-semibold text-center">Testimonials</h2>
+          <div class="flex gap-8 flex-col w-full">
+            <div class="flex justify-around gap-4 w-full items-center">
+              <button
+                class="p-3 rounded-full hover:bg-primary-green hover:text-white bg-foreground-white-foreground hover:bg-opacity-100 bg-opacity-10 cursor-pointer transition-colors duration-100 hover:!outline-primary-green hidden sm:block"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </button>
+              <p class="max-w-2xl sm:text-left text-center">
+                "Donec nibh magna, interdum quis massa sed, rhoncus laoreet
+                quam. Mauris accumsan felis fermentum euismod egestas. Mauris
+                ante augue, cursus sit amet arcu a, maximus suscipit nibh.
+                Integer vel nibh tellus. Pellentesque in risus non dui venenatis
+                sollicitudin sed vitae diam. Fusce tincidunt nisl mi, at
+                molestie odio accumsan non. Pellentesque ma"
+              </p>
+              <button
+                class="p-3 rounded-full hover:bg-primary-green hover:text-white bg-foreground-white-foreground hover:bg-opacity-100 bg-opacity-10 cursor-pointer transition-colors duration-100 hover:!outline-primary-green hidden sm:block"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-col gap-8 items-center">
+              <div class="flex flex-col gap-2 items-center">
+                <img
+                  src="testimonial-photo.png"
+                  alt="Michelle Anna photo"
+                  class="rounded-full max-w-[4rem]"
+                />
+                <div class="text-center">
+                  <p>Michelle Anna</p>
+                  <p class="text-sm text-foreground-white-foreground">
+                    CEO, Co-Founder, XYZ Inc.
+                  </p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="147"
+                height="7"
+                viewBox="0 0 147 7"
+                fill="none"
+              >
+                <circle cx="3.5" cy="3.5" r="3.5" fill="#D9D9D9" />
+                <circle cx="43.5" cy="3.5" r="3.5" fill="#D9D9D9" />
+                <circle cx="83.5" cy="3.5" r="3.5" fill="#D9D9D9" />
+                <circle cx="123.5" cy="3.5" r="3.5" fill="#D9D9D9" />
+                <circle cx="23.5" cy="3.5" r="3.5" fill="#385D50" />
+                <circle cx="63.5" cy="3.5" r="3.5" fill="#D9D9D9" />
+                <circle cx="103.5" cy="3.5" r="3.5" fill="#D9D9D9" />
+                <circle cx="143.5" cy="3.5" r="3.5" fill="#D9D9D9" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-6xl mx-auto">
+          <div class="flex gap-4 items-center w-full py-8">
+            <h2 class="text-4xl font-semibold">Blog</h2>
+            <div class="justify-end flex flex-1">
+              <a
+                href=""
+                class="flex gap-1 align-middle text-sm border-b border-black font-semibold"
+                >View all posts<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="inline h-full"
+                >
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-full mx-auto grid gap-8 grid-cols-[repeat(auto-fit,_minmax(17rem,_1fr))] [&>*]:flex [&>*]:flex-col [&>*]:gap-2 [&>*]:w-full"
+          >
+            <a href="" class="[grid-column:_1_/_-1]">
+              <img
+                src="post1.png"
+                alt=""
+                class="w-full rounded-lg aspect-video"
+              />
+              <div>
+                <p class="font-semibold">First Time Home Owner Ideas</p>
+                <p class="text-sm">
+                  by <span class="font-semibold">Nana Ama</span> on
+                  <time datetime="2022-11-18 20:00" class="font-semibold"
+                    >Nov 18th, 2022</time
+                  >
+                </p>
+              </div>
+            </a>
+            <a href="">
+              <img
+                src="post2.png"
+                alt=""
+                class="w-full rounded-lg aspect-video"
+              />
+              <div>
+                <p class="font-semibold">First Time Home Owner Ideas</p>
+                <p class="text-sm">
+                  by <span class="font-semibold">Nana Ama</span> on
+                  <time datetime="2022-11-18 20:00" class="font-semibold"
+                    >Nov 18th, 2022</time
+                  >
+                </p>
+              </div>
+            </a>
+            <a href="">
+              <img
+                src="post3.png"
+                alt=""
+                class="w-full rounded-lg aspect-video"
+              />
+              <div>
+                <p class="font-semibold">First Time Home Owner Ideas</p>
+                <p class="text-sm">
+                  by <span class="font-semibold">Nana Ama</span> on
+                  <time datetime="2022-11-18 20:00" class="font-semibold"
+                    >Nov 18th, 2022</time
+                  >
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white">
+        <div
+          class="pt-24 pb-8 mx-auto max-w-6xl px-8 flex flex-col gap-16 border-b"
+        >
+          <div
+            class="relative flex flex-col-reverse md:gap-y-0 gap-y-8 md:flex-row"
+          >
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-3 items-center font-semibold">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="text-foreground-white-foreground"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                Subscribe to our Newsletter
+              </div>
+              <form class="flex flex-col md:flex-row gap-4">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="!outline-foreground-white-foreground md:max-lg:max-w-[12rem]"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="!outline-foreground-white-foreground md:max-lg:max-w-[12rem]"
+                  required
+                />
+                <button
+                  class="bg-primary-green !outline-primary-green text-white p-2 rounded-lg justify-center flex"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-send"
+                  >
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div
+              class="flex flex-1 items-start justify-center md:justify-end w-full"
+            >
+              <img
+                src="sofa1.png"
+                alt=""
+                class="w-4/5 min-w-[14rem] object-contain -mt-44 md:-mt-64 object-top"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div class="flex flex-col gap-4">
+              <h3 class="font-medium text-[2rem]">Furni.</h3>
+              <div class="flex flex-col lg:flex-row gap-11">
+                <p class="text-foreground-white-foreground lg:max-w-lg">
+                  Donec mattis porta eros, aliquet finibus risus interdum at.
+                  Nulla vivethe as it was for us to know what was to be done.
+                  the this is a long post for the text. This small text has to
+                  be placed here, since this is.
+                </p>
+                <ul
+                  class="grid grid-cols-2 sm:grid-cols-4 gap-5 text-foreground-white-foreground"
+                >
+                  <div>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                  </div>
+                  <div>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Knowledge Base</a></li>
+                    <li><a href=""> Live Chat </a></li>
+                  </div>
+                  <div>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">Leadership</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                  </div>
+                  <div>
+                    <li><a href="">Nordic Chair</a></li>
+                    <li><a href="">Kruzo Aero</a></li>
+                    <li><a href="">Ergonomic</a></li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <ul
+              class="flex gap-2 items-start [&_a]:p-2 [&_a]:rounded-full [&_a]:bg-[#D9D9D9]"
+            >
+              <a href="">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    />
+                  </svg>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                    />
+                  </svg>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-linkedin"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-foreground-white-foreground bg-white">
+      <div class="max-w-6xl mx-auto px-8 flex flex-col sm:flex-row gap-12 py-4">
+        <div class="sm:text-left text-center">
+          Copyright &copy; Furni. All Rights Reserved.
+        </div>
+        <ul
+          class="flex gap-12 flex-1 sm:justify-end sm:text-left text-center justify-center"
+        >
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

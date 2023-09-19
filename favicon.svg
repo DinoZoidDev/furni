@@ -1,0 +1,10 @@
+<svg viewBox="0 0 180 180" width="360" height="360" xmlns="http://www.w3.org/2000/svg" color="green">
+    <defs>
+        <style>
+            @import url("https://rsms.me/inter/inter.css")
+        </style>
+    </defs>
+    <circle cx="50%" cy="50%" r="80" fill="hsl(157, 22%, 30%)" />
+    <text x="49%" y="62.5%" font-size="60" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif">Fi</text>
+        <text x="64%" y="62.5%" font-size="40" text-anchor="middle" fill="hsla(0, 0%, 100%, 0.3)" font-family="Inter, Arial, sans-serif">.</text>
+</svg>
