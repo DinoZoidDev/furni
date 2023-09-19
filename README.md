@@ -1,6 +1,7 @@
 # Furni
 
-![Hero section]("https://github.com/DinoZoidDev/furni/assets/38674879/491ba40c-f79d-45db-b1a1-578208cf70f2")
+
+<img width="400" alt="Hero section" src="https://github.com/DinoZoidDev/furni/assets/38674879/491ba40c-f79d-45db-b1a1-578208cf70f2">
 
 ### What I Learned
 
