@@ -31,7 +31,7 @@
   }
 }
 body[data-mobile-menu="opened"] {
-  @apply overflow-y-hidden;
+  @apply overflow-y-hidden pointer-events-none;
 }
 
 body[data-mobile-menu="opened"] #opened {

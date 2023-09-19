@@ -757,10 +757,6 @@ a:focus {
   width: 100%;
 }
 
-.w-\[12rem\] {
-  width: 12rem;
-}
-
 .min-w-\[10rem\] {
   min-width: 10rem;
 }
@@ -813,18 +809,6 @@ a:focus {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-\[repeat\(auto-fit\2c _minmax\(19rem\2c _1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-}
-
-.grid-cols-\[repeat\(auto-fit\2c _minmax\(12rem\2c _1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-}
-
-.grid-cols-\[repeat\(auto-fit\2c 1fr\)\] {
-  grid-template-columns: repeat(auto-fit,1fr);
 }
 
 .grid-cols-\[repeat\(auto-fit\2c _minmax\(17rem\2c _1fr\)\)\] {
@@ -1265,6 +1249,7 @@ a:focus {
 }
 
 body[data-mobile-menu="opened"] {
+  pointer-events: none;
   overflow-y: hidden;
 }
 
@@ -1514,34 +1499,8 @@ body[data-mobile-menu="closed"] #mobile-wrapper {
   gap: 0.5rem;
 }
 
-.\[\&\>li\>a\]\:bg-\[\#D9D9D9\]>li>a {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
 .\[\&\>li\]\:relative>li {
   position: relative;
-}
-
-.\[\&\>li\]\:self-start>li {
-  align-self: flex-start;
-}
-
-.\[\&\>li\]\:rounded-full>li {
-  border-radius: 9999px;
-}
-
-.\[\&\>li\]\:bg-\[\#D9D9D9\]>li {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
-.\[\&\>li\]\:p-2>li {
-  padding: 0.5rem;
-}
-
-.\[\&\>li\]\:p-1>li {
-  padding: 0.25rem;
 }
 
 .\[\&\>li\]\:before\:absolute>li::before {
@@ -1600,27 +1559,4 @@ body[data-mobile-menu="closed"] #mobile-wrapper {
 
 .\[\&_a\]\:p-2 a {
   padding: 0.5rem;
-}
-
-.\[\&_li\]\:rounded-full li {
-  border-radius: 9999px;
-}
-
-.\[\&_li\]\:bg-\[\#D9D9D9\] li {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
-.\[\&_li\]\:p-2 li {
-  padding: 0.5rem;
-}
-
-.\[\&a\]\:bg-\[\#D9D9D9\]a {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
-.\[\&li\]\:bg-\[\#D9D9D9\]li {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
