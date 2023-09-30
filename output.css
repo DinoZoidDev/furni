@@ -1249,7 +1249,6 @@ a:focus {
 }
 
 body[data-mobile-menu="opened"] {
-  pointer-events: none;
   overflow-y: hidden;
 }
 
@@ -1275,6 +1274,7 @@ body[data-mobile-menu="opened"] header {
 
 body[data-mobile-menu="opened"] #brand {
   justify-content: center;
+  padding-left: 2.5rem;
 }
 
 body[data-mobile-menu="opened"] .lucide-shopping-cart {
@@ -1425,8 +1425,20 @@ body[data-mobile-menu="closed"] #mobile-wrapper {
     display: flex;
   }
 
+  .md\:\!hidden {
+    display: none !important;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:\!h-auto {
+    height: auto !important;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:flex-row {
@@ -1447,6 +1459,10 @@ body[data-mobile-menu="closed"] #mobile-wrapper {
 
   .md\:gap-y-0 {
     row-gap: 0px;
+  }
+
+  .md\:\!pl-0 {
+    padding-left: 0px !important;
   }
 
   .md\:pt-52 {

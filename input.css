@@ -30,8 +30,9 @@
     @apply outline outline-2 rounded-md outline-inherit outline-offset-2 transition-[outline] duration-100;
   }
 }
+
 body[data-mobile-menu="opened"] {
-  @apply overflow-y-hidden pointer-events-none;
+  @apply overflow-y-hidden;
 }
 
 body[data-mobile-menu="opened"] #opened {
@@ -55,7 +56,7 @@ body[data-mobile-menu="opened"] header {
 }
 
 body[data-mobile-menu="opened"] #brand {
-  @apply justify-center;
+  @apply justify-center pl-10;
 }
 
 body[data-mobile-menu="opened"] .lucide-shopping-cart {

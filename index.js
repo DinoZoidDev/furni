@@ -5,4 +5,4 @@ const toggleModal = () => {
     document.body.dataset.mobileMenu === "opened" ? "closed" : "opened";
 };
 
-menuButton?.addEventListener("click", toggleModal);
+menuButton?.addEventListener("pointerdown", toggleModal);
